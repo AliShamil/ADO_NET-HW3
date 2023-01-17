@@ -1,0 +1,20 @@
+﻿<Window x:Class="ADO_NET_HW3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ADO_NET_HW3"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" KeyDown="Window_KeyDown">
+    <Grid>
+        <TabControl Name="tb_control">
+            <TabItem Header="Query" FontSize="15">
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock Margin="0 5" HorizontalAlignment="Center" FontSize="40">Query Text</TextBlock>
+                    <TextBox Name = "Txt_Query" Width="500"/>
+                    <Button Name="Btn_Exec" Width="100" Margin="10" Click="Btn_Exec_Click">Execute</Button>
+                </StackPanel>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
